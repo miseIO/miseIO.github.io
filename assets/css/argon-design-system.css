@@ -4695,7 +4695,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: #8898aa;
+  color: #000000;
   pointer-events: none;
   cursor: default;
 }
@@ -5124,12 +5124,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.95);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(0, 0, 0);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -5153,7 +5153,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 255, 0.95);
 }
 
 .navbar-dark .navbar-text a {
@@ -5175,6 +5175,7 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 0.0625rem solid rgba(0, 0, 0, 0.05);
   border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .card>hr {
@@ -15792,7 +15793,7 @@ a.text-success:focus {
 }
 
 .text-info {
-  color: #11cdef !important;
+  color: #5105b4 !important;
 }
 
 a.text-info:hover,
@@ -19398,7 +19399,7 @@ textarea[resize="horizontal"] {
 }
 
 .nav-link {
-  color: #525f7f;
+  color: #000000;
 }
 
 .nav-link:hover,
@@ -19668,12 +19669,12 @@ textarea[resize="horizontal"] {
 
 @media (min-width: 768px) {
   .navbar-transparent .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(0, 0, 0, 0.95);
   }
 
   .navbar-transparent .navbar-nav .nav-link:hover,
   .navbar-transparent .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(74, 22, 122, 0.65);
   }
 
   .navbar-transparent .navbar-nav .nav-link.disabled {
@@ -20494,27 +20495,27 @@ textarea[resize="horizontal"] {
 }
 
 .section-shaped .shape-default {
-  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  background: #ffffff;
 }
 
 .section-shaped .shape-default :nth-child(1) {
-  background: #7795f8;
+  background: #56126b57;
 }
 
 .section-shaped .shape-default :nth-child(2) {
-  background: #7b9aff;
+  background: #44045e88;
 }
 
 .section-shaped .shape-default :nth-child(3) {
-  background: #6f8ff8;
+  background: #5d06cf60;
 }
 
 .section-shaped .shape-default :nth-child(4) {
-  background: #76eea7;
+  background: #27007081;
 }
 
 .section-shaped .shape-default :nth-child(5) {
-  background: #6adaff;
+  background: #812fecbd;
 }
 
 .section-shaped .shape-light {
@@ -20749,13 +20750,13 @@ textarea[resize="horizontal"] {
 
 .section-shaped .shape-style-3 :nth-child(1) {
   width: 66%;
-  left: -16.66666%;
+  right: -16.66666%;
   bottom: auto;
 }
 
 .section-shaped .shape-style-3 :nth-child(2) {
   width: 40%;
-  top: 54%;
+  top: 37%;
   right: -16.66666%;
 }
 
@@ -22663,8 +22664,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-tooltip {
+  display: none;
+}
+
+.noUi-active .noUi-tooltip {
   display: block;
-  position: absolute;
+  width: 90px;
   border: 1px solid #D9D9D9;
   border-radius: 3px;
   background: #fff;
@@ -22672,6 +22677,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding: 5px;
   text-align: center;
   white-space: nowrap;
+  top: 50%;
 }
 
 .noUi-horizontal .noUi-tooltip {
@@ -24322,5 +24328,7 @@ pre>code.highlight {
   height: 3px;
   bottom: 0;
 }
+
+
 
 /*# sourceMappingURL=kit-free.css.map */
